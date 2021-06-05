@@ -1,3 +1,12 @@
+//document.addEventListener("DOMContentLoaded", function(event) {
+  let today = new Date().toISOString().substr(0, 10);
+  dateLog = document.getElementById("dateLog");
+  dateLog.value = today;
+  console.log(today)
+//});
+
+
+
 submitButton = document.getElementById("submit");
 submitButton.addEventListener("click",function(){
   console.log("hi");
@@ -10,6 +19,10 @@ submitButton.addEventListener("click",function(){
   aFood = document.getElementById("aFood").value
 //  aFood = aFood.value
   console.log(aFood);
+  d = document.getElementById("dateLog")
+  console.log(d.value)
+  t = document.getElementById("textBox")
+  console.log(t.value)
 })
 
 waterslider = document.getElementById("aWaterSlider");

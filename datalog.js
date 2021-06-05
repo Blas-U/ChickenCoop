@@ -44,3 +44,12 @@ aFood = document.getElementById("aFood");
 aFood.addEventListener("change", function(){
   document.getElementById("aFoodSlider").value = this.value;
 })
+
+t = document.getElementById("textBox");
+t.addEventListener("change", function(){
+  //document.getElementById("textBox").value = t.value;
+  console.log(t.value)
+})
+
+t.value = ("hello")
+console.log(t.value)

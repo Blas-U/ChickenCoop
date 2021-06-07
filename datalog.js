@@ -23,6 +23,24 @@ submitButton.addEventListener("click",function(){
   console.log(d.value)
   t = document.getElementById("textBox")
   console.log(t.value)
+  msg = {
+    "nEggs" : nEggs,
+    "aWater" : aWater,
+    "aFood" : aFood,
+    "date" : d,
+    "Notes" : t
+   }
+   console.log(msg)
+   console.log($("#nEggs").val())
+   //send msg to server
+   // $.ajax({
+   //   type: "POST",
+   //   url: "savedata.php",
+   //   data: msg,
+   //   success: function (data){
+   //     console.log(data)
+   //   }
+   // })
 })
 
 waterslider = document.getElementById("aWaterSlider");

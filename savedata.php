@@ -1,0 +1,7 @@
+<?php
+
+ocho("hello Blas");
+
+
+
+ ?>

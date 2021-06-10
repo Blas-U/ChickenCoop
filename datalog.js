@@ -27,10 +27,10 @@ submitButton.addEventListener("click",function(){
     "nEggs" : nEggs,
     "aWater" : aWater,
     "aFood" : aFood,
-    "date" : d,
-    "Notes" : t
+    "date" : d.value,
+    "Notes" : t.value
    }
-   console.log(msg)
+   console.log("msg:",msg)
    console.log($("#nEggs").val())
    //send msg to server
    $.ajax({

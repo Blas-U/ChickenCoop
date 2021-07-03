@@ -1,9 +1,14 @@
 //document.addEventListener("DOMContentLoaded", function(event) {
-  let today = new Date().toISOString().substr(0, 10);
+  //console.log(new Date().toISOString())
+  //let today = new Date().toISOString().substr(0, 10);
+
+
+  let today = new Date().toISOString().substr(0, 16);
   dateLog = document.getElementById("dateLog");
   dateLog.value = today;
   console.log(today)
-//});
+//}
+
 
 
 
@@ -23,12 +28,18 @@ submitButton.addEventListener("click",function(){
   console.log(d.value)
   t = document.getElementById("textBox")
   console.log(t.value)
+  n = document.getElementById("nameBox")
+  console.log(n.value)
+  //timeLog = document.getElementById("timeLog")
+  //console.log(timeLog.value)
   msg = {
     "nEggs" : nEggs,
     "aWater" : aWater,
     "aFood" : aFood,
     "date" : d.value,
-    "Notes" : t.value
+    "Notes" : t.value,
+    "Name" : n.value,
+    //"timeLog" : timeLog.value
    }
    console.log("msg:",msg)
    console.log($("#nEggs").val())
@@ -39,6 +50,7 @@ submitButton.addEventListener("click",function(){
      data: msg,
      success: function (data){
        console.log(data)
+       alert("Thank You")
      }
    })
 })
@@ -71,3 +83,8 @@ t.addEventListener("change", function(){
 
 t.value = ("hello")
 console.log(t.value)
+
+n = document.getElementById("nameBox");
+n.addEventListener("change", function(){
+  console.log(n.value)
+})

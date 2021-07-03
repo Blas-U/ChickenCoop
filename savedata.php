@@ -16,4 +16,7 @@ echo(json_encode($dataVariable));
 
 // resave the file
 file_put_contents($fName, json_encode($dataVariable)."\n");
+
+//to do 1. add a textbox for name
+//      2. add a input box for time
  ?>

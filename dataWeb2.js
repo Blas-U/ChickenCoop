@@ -6,6 +6,6 @@ $.ajax({
     alert("Thank You")
     w = document.getElementById("dataWeb");
     obj = JSON.parse(data)
-    w.innerHTML = obj[0].nEggs
+    w.innerHTML = obj[0].aWater
   }
 })

@@ -3,11 +3,12 @@ $.ajax({
   url: "dataWebsite.php",
   success: function (data){
     console.log(data)
-    alert("Thank You")
+//    alert("Thank You")
     w = document.getElementById("dataWeb");
     obj = JSON.parse(data)
-    c = "Water: " + obj[0].aWater + "<br>";
-    c += "Eggs: " + obj[0].nEggs;
+    n = obj.length
+    c = "Water: " + obj[n-1].aWater + "<br>";
+    c += "Eggs: " + obj[n-1].nEggs;
     w.innerHTML = c
   }
 })

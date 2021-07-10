@@ -1,7 +1,6 @@
-
 $.ajax({
   type: "POST",
-  url: "dataWebsite.php",
+  url: "dataWebsite2.php",
   success: function (data){
     console.log(data)
     alert("Thank You")

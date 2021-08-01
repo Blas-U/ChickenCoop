@@ -14,10 +14,10 @@ $.ajax({
     c += "Notes: " + obj[n-1].Notes;
     c += "Name: " + obj[n-1].Name;
     w.innerHTML = c
+    var table = document.getElementById("ChickenCoopData");
+    var row = table.insertRow(1);
+    var cell1= row.insertCell(1);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = obj[n-1].aWater;
   }
 })
-table = document.getElementById("ChickenCoopData");
-row = table.insertRow(0);
-cell1= row.insertCell(0);
-cell2 = row.insertCell(1);
-cell1.innerHTML = "obj[n-1].aWater";
